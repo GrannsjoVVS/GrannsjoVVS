@@ -1,0 +1,166 @@
+/* content stuff*/
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+
+/* Contact */
+.contact {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25rem;
+
+
+}
+.email-title{
+    margin-top: 3rem;
+}
+.phone-title{
+    margin-top: 3rem;;
+}
+.phone-link{
+    text-decoration: none;
+    color: black;
+}
+
+/* header*/
+.header{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.header-logo{
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+
+/*introduction*/
+.introduction{
+    margin-top: 2rem;;
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.introduction h2{
+    font-size: 1.5rem;
+}
+.introduction p{
+    font-size: 1.3rem;
+}
+
+/* in the middle */
+@media (min-width: 768px) and (max-width: 1024px){
+    .header{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+}
+
+
+/* Large desktop */
+@media (min-width: 768px) { 
+    .header{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .main{
+        padding: 20px;
+        margin-bottom: 1rem;
+    }
+    .introduction{
+        vertical-align: top;
+        display: inline-block;
+        width: 60%;
+    }
+    .side-bar{
+        width: 39%;
+        vertical-align: top;
+        display: inline-block;
+        text-align: right;
+    }
+    .contact{
+        margin: 0;
+        margin-bottom: 25rem;
+    }
+}
+
+/* check marks */ 
+.check-marks-list {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+.check-marks-list li{ 
+    margin-top: 1rem;
+}
+
+
+/* water */
+.water{
+    max-width: 238px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*contact us */
+.contact-container {
+    text-align: center;
+    margin: auto; 
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+.contact-link{
+    background-color: #478ac9;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 30px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+.contact-link:hover{
+    background-color: black;
+}
+
+/* footer */
+.footer {
+    background-color: #478ac9;
+    padding: 0;
+}
+.footer-content{
+    text-align: center;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+.footer-title{
+    font-size: 2rem;
+}
+.footer-link {
+    font-size: 2rem;
+    color: #478ac9;
+    border-radius: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+.footer-text{
+    padding-top: 1rem;
+    font-size: 1rem;
+}
