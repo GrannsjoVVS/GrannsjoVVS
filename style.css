@@ -1,120 +1,80 @@
-/* content stuff*/
+/* site info*/
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+}
+* { 
+    font-family: Tahoma, sans-serif;
 }
 
-.main{
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 3rem;
-}
-
-
-/* Contact */
-.contact {
-    max-width: 80%;
-    margin: 0 auto;
-    margin-bottom: 25rem;
-
-
-}
-.email-title{
-    margin-top: 3rem;
-}
-.phone-title{
-    margin-top: 3rem;;
-}
-.phone-link{
-    text-decoration: none;
-    color: black;
-}
-
-/* header*/
-.header{
-    max-width: 80%;
-    margin: 0 auto;
-}
-.header-logo{
-    max-width: 600px;
-    margin-top: 10px;
-}
-
-
-/*introduction*/
-.introduction{
-    margin-top: 2rem;;
-    text-align: left;
-    max-width: 80%;
-    margin: 0 auto;
-}
-.introduction h2{
-    font-size: 1.5rem;
-}
-.introduction p{
-    font-size: 1.3rem;
-}
-
-/* in the middle */
-@media (min-width: 768px) and (max-width: 1024px){
-    .header{
-        max-width: 1000px;
-        margin: 0 auto;
-        padding-left: 10px;
-    }
-}
-
-
-/* Large desktop */
-@media (min-width: 768px) { 
-    .header{
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    .main{
-        padding: 20px;
-        margin-bottom: 1rem;
-    }
-    .introduction{
-        vertical-align: top;
-        display: inline-block;
-        width: 60%;
-    }
-    .side-bar{
-        width: 39%;
-        vertical-align: top;
-        display: inline-block;
-        text-align: right;
-    }
-    .contact{
-        margin: 0;
-        margin-bottom: 25rem;
-    }
-}
-
-/* check marks */ 
-.check-marks-list {
+/* content */
+.content-front{
+    height: 100vh;
+    background: url("images/front.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */    
     text-align: center;
-    padding: 0;
-    list-style: none;
+}
+.content-front-title{
+    font-size: 5rem;
+    margin: 0;
+}
+.content-front-text{
     font-size: 1.5rem;
-    margin-bottom: 4rem;
 }
-.check-marks-list li{ 
-    margin-top: 1rem;
+.content-space{
+    height: 40vh;
+    background-color: rgba(250, 250, 250, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+/* list item with checks */
+.content-list-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    height: 100%;
+    background-color: antiquewhite;;
+}
+.content-list{
+    padding-left: 0;
+    list-style: none;
+}
+.content-list li{
+    margin: 1rem;
 }
 
 
-/* water */
-.water{
-    max-width: 238px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* image on the side*/
+.content-side-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-side-image{
+    flex: 1 1 0%;
+    width: 50%
+}
+.content-side-text{
+    flex: 1 1 0%;
+    width: 50%
 }
 
-/*contact us */
+/* contact */
+.content-space-contact{
+    padding: 100px;
+    background-color: rgba(250, 250, 250, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
 .contact-container {
     text-align: center;
     margin: auto; 
@@ -136,14 +96,49 @@ body {
     background-color: black;
 }
 
+/* phone */
+@media only screen and (max-width: 750px) {
+    .content-front-title{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .content-side-image{
+        width: 100%
+    }
+    .content-side-text{
+        width: 100%
+    }
+    .content-side-image-mobile-order{
+        order: 1;
+    }
+}
+
+/* header */
+header {
+    background-color: rgba(250, 250, 250, 1);    
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.header-center{
+    margin: 0 auto;
+    display: flex;
+}
+.header-logo{
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
 /* footer */
 .footer {
-    background-color: #478ac9;
+    background-color: antiquewhite;
     padding: 0;
 }
 .footer-content{
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 1.5rem;
     padding-bottom: 3rem;
 }
@@ -152,7 +147,7 @@ body {
 }
 .footer-link {
     font-size: 2rem;
-    color: #478ac9;
+    color: black;
     border-radius: 100%;
     padding-left: 8px;
     padding-right: 8px;
